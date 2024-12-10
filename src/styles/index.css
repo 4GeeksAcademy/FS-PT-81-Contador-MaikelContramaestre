@@ -1,12 +1,42 @@
 
-/* 
+body{
+    background-color: grey;
+    align-content: center;
+}
+.pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 ;
+}
 
-    You can write your own styles here...
+ .card1{
+    background-color: rgba(51, 51, 51, 0.753);
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+    border-radius: 60px 60px 0px 0px;    
+    box-shadow: 0px 5px 1rem red, 0 -1em .4em rgb(241, 241, 186);
+}
+.card2{
+    left: -25px;
+    top: 20;
+    height: auto;
+    justify-content: center;
+    border-radius: 50px;   
+    box-shadow: 0 1px 20px  red;
+}
 
-*/
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.color{
+    position: relative;
+    z-index: 1;
+    font-size: 80px;
+    color: red;
+    text-shadow:  1px 0px 25px #ff0000
+}

@@ -9,5 +9,15 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+const root = ReactDOM.createRoot(document.getElementById('app'));
+let count = 0;
+setInterval (() => {
+   count++
+   console.log(count);
+   root.render(
+      <Home time={count} />
+   );
+
+}, 1000)
+
 
